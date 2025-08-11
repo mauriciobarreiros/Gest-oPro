@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Teste Grátis - Gestão Pro</title>
+  <meta name="description" content="Inicie seu teste grátis por 7 dias. Preencha seus dados para começar." />
+  <meta name="author" content="Gestão Pro" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Estilos copiados do index.html para manter a consistência */
+    :root{
+      --bg-start:#0f1a2a;
+      --bg-end:#0b3a5b;
+      --accent:#00c0ff;
+      --text:#e6eef8;
+      --muted:#9aa6c0;
+      --card-bg: #0b1520;
+      --radius: 8px;
+      font-family: "Inter", "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      color:var(--text);
+      background: linear-gradient(180deg,var(--bg-start) 0%, var(--bg-end) 100%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      font-size:16px;
+      line-height:1.4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+    .card-form {
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.25);
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+    .card-form h2 {
+      font-size: 2rem;
+      color: #fff;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .card-form p {
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+    .form-group input {
+      width: calc(100% - 20px);
+      padding: 10px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(0,0,0,0.1);
+      color: var(--text);
+      font-size: 1rem;
+    }
+    .btn {
+      width: 100%;
+      background:linear-gradient(90deg,var(--accent),#00eaff);
+      color:#07203a;
+      border:none;
+      padding:12px 18px;
+      border-radius:var(--radius);
+      font-weight:700;
+      cursor:pointer;
+      box-shadow:0 6px 18px rgba(0,0,0,0.25);
+      font-size: 1.1rem;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-form">
+    <h2>Comece seu teste grátis</h2>
+    <p>Preencha os dados abaixo para iniciar sua jornada com a Gestão Pro.</p>
+    <form action="dashboard.html" method="get">
+      <div class="form-group">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="contato">Contato (E-mail ou Telefone)</label>
+        <input type="text" id="contato" name="contato" required>
+      </div>
+      <div class="form-group">
+        <label for="empresa">Nome da Empresa</label>
+        <input type="text" id="empresa" name="empresa" required>
+      </div>
+      <div class="form-group">
+        <label for="cnpj">CNPJ</label>
+        <input type="text" id="cnpj" name="cnpj" required>
+      </div>
+      <div class="form-group">
+        <label for="faturamento">Faturamento Anual (Estimado)</label>
+        <input type="text" id="faturamento" name="faturamento" required>
+      </div>
+      <button type="submit" class="btn">Iniciar Teste Grátis</button>
+    </form>
+  </div>
+
+</body>
+</html>
